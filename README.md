@@ -30,7 +30,7 @@
 ---
 
 ## 📁 Folder Structure
-
+```
 travelingo/
 ├── public/
 │ └── (favicon, index.html, etc.)
@@ -45,12 +45,7 @@ travelingo/
 ├── postcss.config.js
 ├── package.json
 └── README.md
-
-yaml
-Copy
-Edit
-
----
+```
 
 ## 🚀 How to Run This Project Locally
 
