@@ -11,20 +11,20 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-gray-50 md:flex-row">
       <Sidebar />
-      <div className="flex flex-col flex-1 px-8 py-8">
-        <div className="flex flex-row gap-8">
+      <div className="flex flex-col flex-1 px-4 py-4 md:px-8 md:py-8">
+        <div className="flex flex-col gap-8 md:flex-row">
           {/* Central main content */}
           <div className="flex-1 flex flex-col">
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-8">
               <ProfileHeader />
               <SearchBar />
             </div>
             <div className="mb-8">
               <DashboardCard />
             </div>
-            <div className="flex gap-8">
+            <div className="flex flex-col gap-8 md:flex-row">
               <div className="flex-1">
                 <DestinationList />
               </div>
@@ -32,7 +32,7 @@ function App() {
             </div>
           </div>
           {/* Right sidebar */}
-          <div className="w-96 flex flex-col gap-6">
+          <div className="w-full md:w-96 flex flex-col gap-6 mt-8 md:mt-0">
             <div className="flex items-center gap-3 mb-2">
               <img
                 src={jimmy}
